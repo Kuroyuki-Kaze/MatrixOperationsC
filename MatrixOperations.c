@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 #define true 1
 
 //determinant function
@@ -198,13 +197,14 @@ float ** invert(float **invarray, int invarrsize) {
     //otherwise, return arrnull and tell that the matrix is non-invertible
     else {
         array2 = arrnull;
-        printf("The matrix is singular/non-invertible.\n");
+        printf("\nThe matrix is singular/non-invertible.\n");
     }
 
     return array2;
 }
 
 int main() {
+    printf("Available commands are:\ninv\n\n");
     while (true) {
 
         //Value initialization and reset
