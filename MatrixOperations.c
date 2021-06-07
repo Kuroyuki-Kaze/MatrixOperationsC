@@ -290,7 +290,7 @@ int main() {
                 for (int i = 0; i < size; i++) {
                     printf("{");
                     for (int j = 0; j < size; j++) {
-                        printf(" %.3f ", ((float)((int)(arrinv[i][j]*100000))/100000));
+                        printf(" %.4f ", ((double)((long long)(arrinv[i][j]*100000))/100000));
                     }
                     printf("}");
 
